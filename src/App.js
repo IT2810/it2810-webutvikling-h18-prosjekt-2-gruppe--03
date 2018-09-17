@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import HeaderComponent from './components/HeaderComponent';
+import SoundComponent from "./components/SoundComponent";
 import TextComponent from './components/TextComponent';
 import logo from './logo.svg';
 import './App.css';
@@ -18,6 +19,7 @@ class App extends Component {
                 </p>
                 <HeaderComponent />
                 <TextComponent />
+                <SoundComponent />
             </div>
         );
     }
