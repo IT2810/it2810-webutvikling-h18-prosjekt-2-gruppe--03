@@ -1,4 +1,4 @@
-import React, {Component } from 'react'
+import React, {Component} from 'react'
 import "./CategoryComponent.css"
 
 class CategoryComponent extends React.Component{
@@ -142,7 +142,6 @@ class CategoryComponent extends React.Component{
   );
 }
 }
-
 
 
 export default CategoryComponent;
