@@ -111,7 +111,7 @@ class CategoryComponent extends React.Component{
                 type="radio" value="option1"
                 checked={this.state.sounds === "option1"}
                 onChange={this.handleChange3}/>
-              option1
+              animals
             </label>
           </li>
 
@@ -121,7 +121,7 @@ class CategoryComponent extends React.Component{
                   type="radio" value="option2"
                   checked={this.state.sounds === "option2"}
                   onChange={this.handleChange3}/>
-                option2
+                food
               </label>
             </li>
 
@@ -131,7 +131,7 @@ class CategoryComponent extends React.Component{
                   type="radio" value="option3"
                   checked={this.state.sounds === "option3"}
                   onChange={this.handleChange3}/>
-                option3
+                footsteps
               </label>
             </li>
           </ul>
