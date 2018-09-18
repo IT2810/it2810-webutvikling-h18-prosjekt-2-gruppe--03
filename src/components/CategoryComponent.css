@@ -1,0 +1,9 @@
+li{
+  list-style: none;
+  margin-left: -10%;
+}
+.left-aligned{
+  text-align: left;
+  max-width: 250px;
+  max-height: 250px;
+}

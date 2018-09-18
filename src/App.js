@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HeaderComponent from './components/HeaderComponent';
 import TextComponent from './components/TextComponent';
+import CategoryComponent from './components/CategoryComponent';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +20,7 @@ class App extends Component {
         </p>
         <HeaderComponent />
         <TextComponent />
+        <CategoryComponent />
       </div>
     );
   }
