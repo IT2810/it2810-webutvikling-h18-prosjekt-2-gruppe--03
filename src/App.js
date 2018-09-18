@@ -3,6 +3,7 @@ import HeaderComponent from './components/HeaderComponent';
 import SoundComponent from "./components/SoundComponent";
 import TextComponent from './components/TextComponent';
 import CategoryComponent from './components/CategoryComponent';
+import ImageComponent from './components/ImageComponent';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +20,7 @@ class App extends Component {
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
                 <HeaderComponent />
+                <ImageComponent /> 
                 <TextComponent category="cats" textNr="text1"/>
                 <SoundComponent />
                 <CategoryComponent />

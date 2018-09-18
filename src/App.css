@@ -7,6 +7,11 @@
     height: 80px;
 }
 
+svg {
+    width: 50%;
+    height: 50%;
+}
+
 .App-header {
     background-color: #222;
     height: 150px;
