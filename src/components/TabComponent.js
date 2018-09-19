@@ -12,11 +12,14 @@ class TabComponent extends React.Component {
 
 
   changeTab(newActiveTab) {
-    console.log("newActiveTab: " + newActiveTab);
-		this.setState({
-      activeTab: newActiveTab,
-    });
-    //this.props.getActiveTab(this.state.activeTab); // This calls a function in Gallery
+    //console.log("newActiveTab: " + newActiveTab);
+    if(this.state.activeTab != newActiveTab){
+      this.setState({
+        activeTab: newActiveTab,
+      });
+      this.props.getActiveTab(this.state.activeTab); // This calls a function in Gallery
+    }
+
     //console.log("activeTab: " + this.state.activeTab);
 	}
 

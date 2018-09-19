@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import HeaderComponent from './components/HeaderComponent';
 import SoundComponent from "./components/SoundComponent";
 import TextComponent from './components/TextComponent';
-import CategoryComponent from './components/CategoryComponent';
-import TabComponent from './components/TabComponent';
+
+import GalleryComponent from './components/GalleryComponent';
 import ImageComponent from './components/ImageComponent';
 import logo from './logo.svg';
 import './App.css';
@@ -23,9 +23,10 @@ class App extends Component {
                 <HeaderComponent />
                 <ImageComponent />
                 <TextComponent category="cats" textNr="text1"/>
-                <TabComponent />
+                <GalleryComponent />
+
                 <SoundComponent />
-                <CategoryComponent />
+
             </div>
         );
     }
