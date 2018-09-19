@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import CategoryComponent from '../CategoryComponent/CategoryComponent.js';
 import TabComponent from "../TabComponent/TabComponent.js"
 import MediaComponent from "../MediaComponent/MediaComponent.js"
+import './GalleryComponent.css';
 
 class GalleryComponent extends React.Component {
     constructor() {
@@ -34,7 +35,7 @@ class GalleryComponent extends React.Component {
     // Renders gallery text if it exist, if not, shows the welcome text
     render() {
         return (
-            <div>
+            <div className="Gallery-component">
                 <TabComponent getActiveTab={this.getActiveTab} />
                 <CategoryComponent getCategories={this.getCategories} />
                 <MediaComponent activeTab={this.state.activeTab}

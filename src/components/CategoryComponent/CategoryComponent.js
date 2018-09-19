@@ -35,60 +35,65 @@ class CategoryComponent extends Component {
         return (
             <div className="CategoryComponent">
                 <form onSubmit={this.handleSubmit}>
-                    <p>Pictures</p>
+                    <div>
+                        <p>Pictures</p>
 
-                    <label>
-                        <input type="radio" onChange={this.handlePictureChange}
-                               checked={this.state.picture === "Birds"} />
-                        Birds
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handlePictureChange}
-                               checked={this.state.picture === "Flowers"} />
-                        Flowers
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handlePictureChange}
-                               checked={this.state.picture === "Landscape"} />
-                        Landscape
-                    </label>
+                        <label>
+                            <input type="radio" onChange={this.handlePictureChange}
+                                checked={this.state.picture === "Birds"} />
+                            Birds
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handlePictureChange}
+                                checked={this.state.picture === "Flowers"} />
+                            Flowers
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handlePictureChange}
+                                checked={this.state.picture === "Landscape"} />
+                            Landscape
+                        </label>
+                    </div>
 
-                    <p>Texts</p>
+                    <div>
+                        <p>Texts</p>
 
-                    <label>
-                        <input type="radio" onChange={this.handleTextChange}
-                               checked={this.state.text === "Cats"} />
-                        Cats
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handleTextChange}
-                               checked={this.state.text === "Chocolate"} />
-                        Chocolate
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handleTextChange}
-                               checked={this.state.text === "Moon"} />
-                        Moon
-                    </label>
+                        <label>
+                            <input type="radio" onChange={this.handleTextChange}
+                                checked={this.state.text === "Cats"} />
+                            Cats
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handleTextChange}
+                                checked={this.state.text === "Chocolate"} />
+                            Chocolate
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handleTextChange}
+                                checked={this.state.text === "Moon"} />
+                            Moon
+                        </label>
+                    </div> 
 
-                    <p>Sounds</p>
+                    <div>
+                        <p>Sounds</p>
 
-                    <label>
-                        <input type="radio" onChange={this.handleSoundChange}
-                               checked={this.state.sound === "Animals"} />
-                        Animals
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handleSoundChange}
-                               checked={this.state.sound === "Food"} />
-                        Food
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handleSoundChange}
-                               checked={this.state.sound === "Footsteps"} />
-                        Footsteps
-                    </label>
-
+                        <label>
+                            <input type="radio" onChange={this.handleSoundChange}
+                                checked={this.state.sound === "Animals"} />
+                            Animals
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handleSoundChange}
+                                checked={this.state.sound === "Food"} />
+                            Food
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handleSoundChange}
+                                checked={this.state.sound === "Footsteps"} />
+                            Footsteps
+                        </label>
+                    </div>
                     <br />
                     <button type="submit">Make your choice</button>
                 </form>

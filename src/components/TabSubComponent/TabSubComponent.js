@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import './TabSubComponent.css';
 
 class TabSubComponent extends React.Component {
     constructor(props) {
@@ -35,7 +36,7 @@ class TabSubComponent extends React.Component {
     // Renders gallery text if it exist, if not, shows the welcome text
     render() {
         return (
-            <button onClick={this.handleClick} name="btnTab1" type="button">Tab {this.state.thisTab}</button>
+            <button className="tab-button" onClick={this.handleClick} name="btnTab1" type="button">Tab {this.state.thisTab}</button>
         );
     }
 }
