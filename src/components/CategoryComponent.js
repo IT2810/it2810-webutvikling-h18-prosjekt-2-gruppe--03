@@ -1,150 +1,91 @@
 import React, {Component} from 'react'
 import "./CategoryComponent.css"
 
-class CategoryComponent extends React.Component {
-    constructor() {
-        super();
-        this.state = {pictures: "", texts: "", sounds: ""};
+class CategoryComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {picture: "", text: "", sound: ""};
 
-        this.handleChange1 = this.handleChange1.bind(this);
-        this.handleChange2 = this.handleChange2.bind(this);
-        this.handleChange3 = this.handleChange3.bind(this);
+        this.handlePictureChange = this.handlePictureChange.bind(this);
+        this.handleTextChange = this.handleTextChange.bind(this);
+        this.handleSoundChange = this.handleSoundChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange1(event) {
-        this.setState({
-            pictures: event.target.value
-        });
+    handlePictureChange(event) {
+        this.setState({picture: event.target.parentElement.textContent});
     }
 
-    handleChange2(event) {
-        this.setState({
-            texts: event.target.value
-        });
+    handleTextChange(event) {
+        this.setState({text: event.target.parentElement.textContent});
     }
 
-    handleChange3(event) {
-        this.setState({
-            sounds: event.target.value
-        });
+    handleSoundChange(event) {
+        this.setState({sound: event.target.parentElement.textContent});
     }
 
     handleSubmit(event) {
         event.preventDefault();
 
-        alert(`You chose the ${this.state.pictures}, ${this.state.texts} and ${this.state.sounds} options.`);
+        // Send this.state.picture, this.state.text and this.state.sound via function to super-component
+        alert(`You chose the ${this.state.picture}, ${this.state.text} and ${this.state.sound} options.`);
     }
 
     render() {
         return (
-            <div className="left-aligned">
+            <div className="CategoryComponent">
                 <form onSubmit={this.handleSubmit}>
                     <p>Pictures</p>
-                    <ul>
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option1"
-                                    checked={this.state.pictures === "option1"}
-                                    onChange={this.handleChange1} />
-                                birds
-                            </label>
-                        </li>
 
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option2"
-                                    checked={this.state.pictures === "option2"}
-                                    onChange={this.handleChange1} />
-                                flowers
-                            </label>
-                        </li>
-
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option3"
-                                    checked={this.state.pictures === "option3"}
-                                    onChange={this.handleChange1} />
-                                landscape
-                            </label>
-                        </li>
-                    </ul>
+                    <label>
+                        <input type="radio" onChange={this.handlePictureChange} />
+                        Birds
+                    </label>
+                    <label>
+                        <input type="radio" onChange={this.handlePictureChange} />
+                        Flowers
+                    </label>
+                    <label>
+                        <input type="radio" onChange={this.handlePictureChange} />
+                        Landscape
+                    </label>
 
                     <p>Texts</p>
-                    <ul>
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option1"
-                                    checked={this.state.texts === "option1"}
-                                    onChange={this.handleChange2} />
-                                cats
-                            </label>
-                        </li>
 
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option2"
-                                    checked={this.state.texts === "option2"}
-                                    onChange={this.handleChange2} />
-                                chocolate
-                            </label>
-                        </li>
-
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option3"
-                                    checked={this.state.texts === "option3"}
-                                    onChange={this.handleChange2} />
-                                moon
-                            </label>
-                        </li>
-                    </ul>
+                    <label>
+                        <input type="radio" onChange={this.handleTextChange} />
+                        Cats
+                    </label>
+                    <label>
+                        <input type="radio" onChange={this.handleTextChange} />
+                        Chocolate
+                    </label>
+                    <label>
+                        <input type="radio" onChange={this.handleTextChange} />
+                        Moon
+                    </label>
 
                     <p>Sounds</p>
-                    <ul>
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option1"
-                                    checked={this.state.sounds === "option1"}
-                                    onChange={this.handleChange3} />
-                                animals
-                            </label>
-                        </li>
 
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option2"
-                                    checked={this.state.sounds === "option2"}
-                                    onChange={this.handleChange3} />
-                                food
-                            </label>
-                        </li>
+                    <label>
+                        <input type="radio" onChange={this.handleSoundChange} />
+                        Animals
+                    </label>
+                    <label>
+                        <input type="radio" onChange={this.handleSoundChange} />
+                        Food
+                    </label>
+                    <label>
+                        <input type="radio" onChange={this.handleSoundChange} />
+                        Footsteps
+                    </label>
 
-                        <li>
-                            <label>
-                                <input
-                                    type="radio" value="option3"
-                                    checked={this.state.sounds === "option3"}
-                                    onChange={this.handleChange3} />
-                                footsteps
-                            </label>
-                        </li>
-                    </ul>
-
+                    <br />
                     <button type="submit">Make your choice</button>
                 </form>
             </div>
         );
     }
 }
-
 
 export default CategoryComponent;
