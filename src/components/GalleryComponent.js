@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import CategoryComponent from './CategoryComponent';
 import TabComponent from "./TabComponent"
-import MediaComponent from "./MediaComponent"
+//import MediaComponent from "./MediaComponent"
 
 class GalleryComponent extends React.Component {
   constructor() {
@@ -38,7 +38,7 @@ class GalleryComponent extends React.Component {
       <div>
       <TabComponent getActiveTab={this.getActiveTab} />
       <CategoryComponent getCategories={this.getCategories} />
-      <MediaComponent activeTab={this.state.activeTab} imageCategory={this.state.imageCategory} textCategory={this.state.textCategory} soundCategory={this.state.soundsCategory} />
+
       </div>
       );
   }

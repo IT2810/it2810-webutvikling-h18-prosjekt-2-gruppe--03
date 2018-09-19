@@ -22,7 +22,7 @@ class App extends Component {
                 </p>
                 <HeaderComponent />
                 <ImageComponent />
-                <TextComponent category="cats" textNr="text1"/>
+                <TextComponent category="cats" textNr="text1" />
                 <GalleryComponent />
 
                 <SoundComponent />
