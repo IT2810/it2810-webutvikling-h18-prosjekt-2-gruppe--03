@@ -24,9 +24,6 @@ class App extends Component {
                 <ImageComponent />
                 <TextComponent category="cats" textNr="text1" />
                 <GalleryComponent />
-
-                <SoundComponent />
-
             </div>
         );
     }
