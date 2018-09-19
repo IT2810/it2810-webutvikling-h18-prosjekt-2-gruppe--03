@@ -1,6 +1,4 @@
-import React, {
-    Component
-} from 'react'
+import React, {Component} from 'react'
 import "./TextComponent.css"
 
 class TextComponent extends React.Component {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import TabSubComponent from "./TabSubComponent.js"
+import TabSubComponent from "../TabSubComponent/TabSubComponent.js"
 
 class TabComponent extends React.Component {
   constructor(props) {
