@@ -37,9 +37,9 @@ class MediaComponent extends Component {
     render() {
         return (
             <div className="MediaComponent">
-                <ImageComponent category={this.props.imageCategory} textNr={"text1"}
+                <ImageComponent category={this.props.imageCategory}
                                 fileNumber={this.state.currentPictureFileNumbers[this.props.activeTab]} />
-                <TextComponent category={this.props.textCategory} textNr={"text1"}
+                <TextComponent category={this.props.textCategory}
                                fileNumber={this.state.currentTextFileNumbers[this.props.activeTab]} />
                 <SoundComponent category={this.props.soundCategory}
                                 fileNumber={this.state.currentSoundFileNumbers[this.props.activeTab]} />
