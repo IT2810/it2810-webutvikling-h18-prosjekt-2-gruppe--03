@@ -6,22 +6,22 @@ class CategoryComponent extends React.Component{
     super(props);
     this.state= {pictures:"", texts:"", sounds:""};
 
-    this.handleChange1 = this.handleChange1.bind(this);
-    this.handleChange2 = this.handleChange2.bind(this);
-    this.handleChange3 = this.handleChange3.bind(this);
+    this.handlePictureChange = this.handlePictureChange.bind(this);
+    this.handleTextChange = this.handleTextChange.bind(this);
+    this.handleSoundChange = this.handleSoundChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleChange1(event) {
+  handlePictureChange(event) {
     this.setState({
       pictures: event.target.value
     });
   }
-  handleChange2(event) {
+  handleTextChange(event) {
     this.setState({
       texts: event.target.value
     });
   }
-  handleChange3(event) {
+  handleSoundChange(event) {
     this.setState({
       sounds: event.target.value
     });
@@ -44,7 +44,7 @@ class CategoryComponent extends React.Component{
           <input
             type="radio" value="birds"
             checked={this.state.pictures === "birds"}
-            onChange={this.handleChange1}/>
+            onChange={this.handlePictureChange}/>
           birds
         </label>
       </li>
@@ -54,7 +54,7 @@ class CategoryComponent extends React.Component{
             <input
               type="radio" value="flowers"
               checked={this.state.pictures === "flowers"}
-              onChange={this.handleChange1}/>
+              onChange={this.handlePictureChange}/>
             flowers
           </label>
         </li>
@@ -64,7 +64,7 @@ class CategoryComponent extends React.Component{
             <input
               type="radio" value="landscape"
               checked={this.state.pictures === "landscape"}
-              onChange={this.handleChange1}/>
+              onChange={this.handlePictureChange}/>
             landscape
           </label>
         </li>
@@ -77,7 +77,7 @@ class CategoryComponent extends React.Component{
             <input
               type="radio" value="cats"
               checked={this.state.texts === "cats"}
-              onChange={this.handleChange2}/>
+              onChange={this.handleTextChange}/>
             cats
           </label>
         </li>
@@ -87,7 +87,7 @@ class CategoryComponent extends React.Component{
               <input
                 type="radio" value="chocolate"
                 checked={this.state.texts === "chocolate"}
-                onChange={this.handleChange2}/>
+                onChange={this.handleTextChange}/>
               chocolate
             </label>
           </li>
@@ -97,7 +97,7 @@ class CategoryComponent extends React.Component{
               <input
                 type="radio" value="moon"
                 checked={this.state.texts === "moon"}
-                onChange={this.handleChange2}/>
+                onChange={this.handleTextChange}/>
               moon
             </label>
           </li>
@@ -110,7 +110,7 @@ class CategoryComponent extends React.Component{
               <input
                 type="radio" value="animals"
                 checked={this.state.sounds === "animals"}
-                onChange={this.handleChange3}/>
+                onChange={this.handleSoundChange}/>
               animals
             </label>
           </li>
@@ -120,7 +120,7 @@ class CategoryComponent extends React.Component{
                 <input
                   type="radio" value="food"
                   checked={this.state.sounds === "food"}
-                  onChange={this.handleChange3}/>
+                  onChange={this.handleSoundChange}/>
                 food
               </label>
             </li>
@@ -130,7 +130,7 @@ class CategoryComponent extends React.Component{
                 <input
                   type="radio" value="footsteps"
                   checked={this.state.sounds === "footsteps"}
-                  onChange={this.handleChange3}/>
+                  onChange={this.handleSoundChange}/>
                 footsteps
               </label>
             </li>
@@ -142,6 +142,5 @@ class CategoryComponent extends React.Component{
   );
 }
 }
-
 
 export default CategoryComponent;

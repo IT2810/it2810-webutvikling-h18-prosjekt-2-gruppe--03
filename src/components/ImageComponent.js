@@ -1,6 +1,6 @@
-import React, {Component } from 'react'
+import React, {Component} from 'react'
 
-class ImageComponent extends Component { 
+class ImageComponent extends Component {
 
     constructor() {
         super();
@@ -9,22 +9,20 @@ class ImageComponent extends Component {
         }
     };
 
-    
 
     componentDidMount() {
-    
+
         fetch("media/img/birds/BirdsOfParadise2.svg")
-        .then(response => response.text())
-        //.then(xmlString => (new DOMParser()).parseFromString(xmlString, "text/xml"))
-        .then(data => this.setState({svg: data}));
-         
+            .then(response => response.text())
+            //.then(xmlString => (new DOMParser()).parseFromString(xmlString, "text/xml"))
+            .then(data => this.setState({svg: data}));
+
 
     };
 
-    
 
-    render() {  
-        return <div className="Image-component" dangerouslySetInnerHTML={{ __html: this.state.svg }} />
+    render() {
+        return <div className="Image-component" dangerouslySetInnerHTML={{__html: this.state.svg}} />
     };
 
 };

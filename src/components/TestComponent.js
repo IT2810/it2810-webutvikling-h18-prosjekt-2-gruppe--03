@@ -6,6 +6,6 @@ class TestComponent extends Component {
         return <h3> Hello hello!</h3>;
     };
 
-};
+}
 
 export default TestComponent;
