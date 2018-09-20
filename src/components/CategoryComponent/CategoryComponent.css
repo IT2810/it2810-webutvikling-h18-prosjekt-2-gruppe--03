@@ -1,107 +1,84 @@
-
 .CategoryComponent {
     text-align: left;
     width: fit-content;
+    grid-column: 2;
+    grid-row: 1;
 }
 
-form {
+form div {
     display: flex;
-    margin: 1em;
-    flex-direction: column;
+    margin: 0;
+    flex-flow: column;
 }
 
 form label {
     margin-left: 1em;
 }
 
-form button {
-    align-self: flex-start;
-}
-
-
-.left-aligned, form {
-    text-align: left;
-    height: 100%;
-    width: 100%;
-    grid-column: 3;
-    grid-row: 3/4;
-}
-
-form {
-    margin: 0.5em;
-}
-
-
-@media screen and (max-width: 200px) {
-    .left-aligned, form {
-        text-align: left;
-        height: 100%;
-        width: 100%;
+@media screen and (max-width: 400px) {
+    .CategoryComponent {
         grid-column: 1;
-        grid-row: 3/4;
-    }
-    
-    .left-aligned {
-        float: left;
-        margin: 0.5;
-    } 
-
-    li {
-        list-style: none;
-        float: left;
-        padding: 0.1em;
-    }
-    
-    ul {
-        float: left;
+        grid-row: 2;
     }
 
     form {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 70% 20%;
-    }
-    
-    button {
-        grid-column: 1;
-        grid-row: 2;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .left-aligned, form {
-        text-align: left;
-        height: 100%;
-        width: 100%;
-        grid-column: 1;
-        grid-row: 3/4;
-    }
-    
-    .left-aligned {
-        float: left;
-        margin: 0.5em;
+        justify-items: center;
+        grid-gap: 0.5em;
     }
 
-    li {
-        list-style: none;
-        float: left;
-        padding: 0.1em;
+    form div {
+        display: flex;
+        margin: 0;
+        flex-flow: row;
     }
-    
-    ul {
+
+    form label {
+        margin-left: 0;
+        font-size: 0.8em;
         float: left;
-        padding: 0;
+    }
+
+    form div p {
         margin: 0;
     }
 
+    form label {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .CategoryComponent {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
     form {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50% 10%;
+        justify-items: center;
+        grid-gap: 0.5em;
     }
-    
-    button {
-        grid-column: 1;
-        grid-row: 2;
+
+    form div {
+        display: flex;
+        margin: 0;
+        flex-flow: column;
+    }
+
+    form label {
+        margin-left: 0;
+        font-size: 0.8em;
+        float: left;
+    }
+
+    form div p {
+        margin: 0;
+    }
+
+    form label {
+        margin-left: 0;
     }
 }

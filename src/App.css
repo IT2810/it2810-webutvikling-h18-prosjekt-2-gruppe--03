@@ -8,7 +8,6 @@
     */
 }
 
-
 .App {
     text-align: center;
     display: grid;
@@ -38,7 +37,6 @@
     font-size: 2.0em;
 }
 
-
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
@@ -47,7 +45,6 @@
         transform: rotate(360deg);
     }
 }
-
 
 @media screen and (max-width: 800px) {
     .App {
@@ -72,7 +69,7 @@
 @media screen and (max-width: 400px) {
     .App {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 5% 90% 5%;
         grid-template-rows: 10% 1fr;
     }
 
@@ -85,7 +82,6 @@
     }
 
 }
-
 
 /*
 .App {

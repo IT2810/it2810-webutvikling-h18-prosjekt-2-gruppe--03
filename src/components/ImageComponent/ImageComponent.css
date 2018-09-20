@@ -1,7 +1,7 @@
 .Image-component, svg {
     height: 20em;
     width: 20em;
-    grid-column: 2;
+    grid-column: 1/2;
     grid-row: 3;
 }
 

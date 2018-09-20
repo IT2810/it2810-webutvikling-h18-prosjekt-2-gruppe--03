@@ -93,8 +93,10 @@ class CategoryComponent extends Component {
                             Footsteps
                         </label>
                     </div>
-                    <br />
+
+                <div>
                     <button type="submit">Make your choice</button>
+                </div>
                 </form>
             </div>
         );
