@@ -18,7 +18,7 @@ class TabComponent extends React.Component {
             this.setState({
                 activeTab: newActiveTab,
             });
-            this.props.getActiveTab(this.state.activeTab); // This calls a function in Gallery
+            this.props.getActiveTab(newActiveTab); // Calls a function in Gallery
         }
 
         //console.log("activeTab: " + this.state.activeTab);
