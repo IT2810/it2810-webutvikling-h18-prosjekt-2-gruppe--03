@@ -49,9 +49,7 @@ class TextComponent extends React.Component {
         } else {
             return (
                 <div> {
-                    this.state.text.split('\n').map((item, i) => {
-                        return <p key={i}> {item} </p>;
-                    })
+                    this.state.text.split('\n').map((item, i) =>  <p key={i}> {item} </p>)
                 }
                     <p className="text-author"> -{this.state.author} </p>
                 </div>
