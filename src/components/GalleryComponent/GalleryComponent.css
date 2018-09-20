@@ -1,5 +1,26 @@
 
 .Gallery-component {
     background-color: rgb(175, 175, 175);
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 10% 20% 1fr;
 }
 
+@media screen and (max-width: 800px) {
+    .Gallery-component {
+        background-color: rgb(175, 175, 175);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 1fr;
+    }
+}
+
+
+@media screen and (max-width: 400px)  {
+    .Gallery-component {
+        background-color: rgb(175, 175, 175);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 1fr;
+    }
+}

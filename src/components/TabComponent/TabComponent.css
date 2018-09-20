@@ -1,7 +1,7 @@
 
 .Tab-component {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 1;
+    grid-row: 1;
     padding: 1em; 
 }
 
@@ -10,8 +10,8 @@
 @media screen and (max-width: 200px) {
     .Tab-component {
         grid-column: 1;
-        grid-row: 2/3;
-        padding: 1em;  
+        grid-row: 1;
+        padding: 0.5em;  
     }
  
 }
@@ -19,7 +19,7 @@
 @media screen and (max-width: 500px) {
     .Tab-component {
         grid-column: 1;
-        grid-row: 2/3;
-        padding: 1em;  
+        grid-row: 1;
+        padding: 0.5em;  
     }
 }
