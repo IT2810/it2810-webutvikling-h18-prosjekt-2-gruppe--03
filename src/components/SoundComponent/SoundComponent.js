@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 class SoundComponent extends Component {
+  //This is a child of media component
     category;
     fileNumber;
 
@@ -26,6 +27,7 @@ const fileDict = {
     "footsteps": ["footsteps.mp3", "footsteps-on-cement.mp3", "hard-shoes.mp3", "hiking-a-trail.mp3"]
 };
 
+// Gives the file name from chosen category and file number
 function getFileName(category, fileNumber) {
     if (category === undefined || category === "") {
         console.error("Category was undefined or an empty string!");

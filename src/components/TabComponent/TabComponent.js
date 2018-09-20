@@ -3,12 +3,15 @@ import TabSubComponent from "../TabSubComponent/TabSubComponent.js"
 import './TabComponent.css';
 
 class TabComponent extends Component {
+  //This is a child of gallery component and a parent to 4 tab sub-components
+
     constructor(props) {
         super(props);
         this.state = {activeTab: 1};
         this.changeTab = this.changeTab.bind(this);
     }
 
+    // Updates active state here and in gallery component when a tab is clicked
     changeTab(newActiveTab) {
         if (this.state.activeTab !== newActiveTab) {
             this.setState({activeTab: newActiveTab});
@@ -16,7 +19,7 @@ class TabComponent extends Component {
         }
     }
 
-    // Renders gallery text if it exist, if not, shows the welcome text
+    // Renders 4 tabs
     render() {
         return (
             <div className="Tab-component">

@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './TabSubComponent.css';
 
 class TabSubComponent extends Component {
+  //This is a child of tab component
+
     thisTab;
 
     constructor(props) {
@@ -10,11 +12,12 @@ class TabSubComponent extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    // Tells tab component when this tab is clicked
     handleClick() {
-        this.props.changeTab(this.props.thisTab) // Calls a function in TabComponent
+        this.props.changeTab(this.props.thisTab)
     }
 
-    // Renders gallery text if it exist, if not, shows the welcome text
+    // Renders a tab
     render() {
         return (
             <button className="tab-button" onClick={this.handleClick} name="btnTab1" type="button" >Tab {this.props.thisTab}</button>
