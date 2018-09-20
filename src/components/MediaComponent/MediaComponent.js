@@ -11,7 +11,7 @@ class MediaComponent extends Component {
         this.state = {
             // The arrays below contain the media file numbers, which are sent to the respective media components,
             // chosen by the active tab number (minus 1, since they're in the range [1, 4])
-            currentPictureFileNumbers: [1, 2, 3, 4],
+            currentImageFileNumbers: [1, 2, 3, 4],
             currentTextFileNumbers: [1, 2, 3, 4],
             currentSoundFileNumbers: [1, 2, 3, 4],
         };
@@ -19,7 +19,7 @@ class MediaComponent extends Component {
 
     // Creates exhibitions by shuffling the values in the arrays
     generateNewExhibition() {
-        shuffleArray(this.state.currentPictureFileNumbers);
+        shuffleArray(this.state.currentImageFileNumbers);
         shuffleArray(this.state.currentTextFileNumbers);
         shuffleArray(this.state.currentSoundFileNumbers);
     }
@@ -35,7 +35,7 @@ class MediaComponent extends Component {
         return (
             <div className="MediaComponent">
                 <ImageComponent category={this.props.imageCategory} // Active tab numbers are in the range [1, 4]
-                                fileNumber={this.state.currentPictureFileNumbers[this.props.activeTab - 1]} />
+                                fileNumber={this.state.currentImageFileNumbers[this.props.activeTab - 1]} />
                 <TextComponent category={this.props.textCategory}
                                fileNumber={this.state.currentTextFileNumbers[this.props.activeTab - 1]} />
                 <SoundComponent category={this.props.soundCategory}

@@ -29,7 +29,7 @@ class TextComponent extends Component {
                 text: data.text,
             }))
             .catch(function (error) {
-                console.log(error);
+                console.error(error);
             });
     }
 
