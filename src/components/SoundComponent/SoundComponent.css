@@ -2,7 +2,7 @@
     grid-column: 1;
     grid-row: 2;
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 .attribution {
@@ -13,9 +13,6 @@
 
 @media screen and (max-width: 450px) {
     .SoundComponent {
-        grid-column: 1;
         grid-row: 3;
-        height: 100%;
-        width: 100%
     }
 }

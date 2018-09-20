@@ -10,20 +10,9 @@
 
 @media screen and (max-width: 800px) {
     .Gallery-component {
-        background-color: rgb(175, 175, 175);
-        display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 10% 35% 1fr 10%;
         justify-items: center;
         grid-gap: 1.5em;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .Gallery-component {
-        background-color: rgb(175, 175, 175);
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 35% 1fr 10%;
     }
 }

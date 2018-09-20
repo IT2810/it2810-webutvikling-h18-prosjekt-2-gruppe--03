@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import GalleryComponent from './components/GalleryComponent/GalleryComponent.js';
-import logo from './logo.svg';
 import './App.css';
-
 
 class App extends Component {
     render() {

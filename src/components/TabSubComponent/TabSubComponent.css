@@ -17,36 +17,9 @@
     background-color: rgb(74, 130, 178);
 }
 
-@media screen and (max-width: 800px) {
-    .tab-button {
-        margin: 0.5em;
-        height: 3em;
-        width: 6em;
-        border-radius: 4px;
-        background-color: rgb(59, 87, 124);
-        border: none;
-        color: lightgrey;
-    }
-
-    .tab-button:hover {
-        background-color: lightgrey;
-        color: grey;
-    }
-}
-
 @media screen and (max-width: 450px) {
     .tab-button {
         margin: 0.2em;
-        height: 3em;
         width: 5em;
-        border-radius: 4px;
-        background-color: rgb(59, 87, 124);
-        border: none;
-        color: lightgrey;
-    }
-
-    .tab-button:hover {
-        background-color: lightgrey;
-        color: grey;
     }
 }
