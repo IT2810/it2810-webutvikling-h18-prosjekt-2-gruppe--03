@@ -4,7 +4,7 @@ import "./CategoryComponent.css"
 class CategoryComponent extends Component {
     constructor(props) {
         super(props);
-        this.state = {picture: "", text: "", sound: ""};
+        this.state = {picture: "Birds", text: "Cats", sound: "Animals"};
 
         this.handlePictureChange = this.handlePictureChange.bind(this);
         this.handleTextChange = this.handleTextChange.bind(this);

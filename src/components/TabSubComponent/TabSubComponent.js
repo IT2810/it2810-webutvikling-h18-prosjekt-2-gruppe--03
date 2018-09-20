@@ -10,7 +10,6 @@ class TabSubComponent extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-
     handleClick() {
         this.props.changeTab(this.props.thisTab) // Calls a function in TabComponent
     }
@@ -18,7 +17,7 @@ class TabSubComponent extends Component {
     // Renders gallery text if it exist, if not, shows the welcome text
     render() {
         return (
-            <button className="tab-button" onClick={this.handleClick} name="btnTab1" type="button">Tab {this.props.thisTab}</button>
+            <button className="tab-button" onClick={this.handleClick} name="btnTab1" type="button" >Tab {this.props.thisTab}</button>
         );
     }
 }
