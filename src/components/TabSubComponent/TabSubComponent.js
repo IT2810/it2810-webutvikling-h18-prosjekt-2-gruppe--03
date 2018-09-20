@@ -1,36 +1,18 @@
 import React, {Component} from 'react';
 import './TabSubComponent.css';
 
-class TabSubComponent extends React.Component {
+class TabSubComponent extends Component {
+    thisTab;
+
     constructor(props) {
         super(props);
 
-        if (this.props.activeTab == this.props.thisTab) {
-            this.state = {
-                activeTab: true,
-            };
-        }
-        else {
-            this.state = {
-                activeTab: false,
-            };
-
-        }
-        /*
-        console.log("props.activeTab: " + this.props.activeTab);
-        console.log("state.thisTab: " + this.state.thisTab);
-        console.log("state.activeTab: " + this.state.activeTab);
-        */
         this.handleClick = this.handleClick.bind(this);
     }
 
 
     handleClick() {
-        this.setState({
-            activeTab: true
-        });
-        this.props.changeTab(this.props.thisTab)
-        //console.log(this.state.activeTab);
+        this.props.changeTab(this.props.thisTab) // Calls a function in TabComponent
     }
 
     // Renders gallery text if it exist, if not, shows the welcome text

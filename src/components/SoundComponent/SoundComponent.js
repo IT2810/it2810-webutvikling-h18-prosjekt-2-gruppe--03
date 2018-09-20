@@ -23,10 +23,6 @@ class SoundComponent extends Component {
                     <source src={`/media/sound/${this.props.category}/${getFileName(this.props.category, this.props.fileNumber)}`} type="audio/mpeg" />
                     Your browser does not support HTML5 audio.
                 </audio>
-                <p>
-                    <b>{this.props.category}{this.props.fileNumber}:</b>
-                    {getFileName(this.props.category, this.props.fileNumber)}
-                </p>
             </div>
         );
     }

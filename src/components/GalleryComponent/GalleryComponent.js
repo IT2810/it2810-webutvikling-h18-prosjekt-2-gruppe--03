@@ -17,7 +17,6 @@ class GalleryComponent extends Component {
     }
 
     getActiveTab(newActiveTab) {
-        console.log("newActiveTab: " + newActiveTab);
         this.setState({
             activeTab: newActiveTab,
             shouldGenerateNewExhibition: false
@@ -25,7 +24,6 @@ class GalleryComponent extends Component {
     }
 
     getCategories(newCategories) {
-        console.log("newCategories: " + newCategories);
         this.setState({
             imageCategory: newCategories[0],
             textCategory: newCategories[1],
