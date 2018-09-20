@@ -5,6 +5,12 @@
     width: 100%
 }
 
+.attribution {
+    margin-top: -0.1em;
+    font-size: small;
+    font-style: italic;
+}
+
 @media screen and (max-width: 450px) {
     .SoundComponent {
         grid-column: 1;
