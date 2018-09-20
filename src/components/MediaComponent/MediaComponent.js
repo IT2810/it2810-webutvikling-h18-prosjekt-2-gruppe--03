@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import ImageComponent from "../ImageComponent/ImageComponent";
 import TextComponent from "../TextComponent/TextComponent";
 import SoundComponent from "../SoundComponent/SoundComponent";
+import './MediaComponent.css';
 
 class MediaComponent extends Component {
     constructor(props) {

@@ -1,7 +1,8 @@
 .Tab-component {
     grid-column: 1;
     grid-row: 1;
-    padding: 1em;
+    padding: 1em; 
+    justify-self: center;
 }
 
 @media screen and (max-width: 200px) {

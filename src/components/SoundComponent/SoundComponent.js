@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './SoundComponent.css';
 
 class SoundComponent extends Component {
     category;

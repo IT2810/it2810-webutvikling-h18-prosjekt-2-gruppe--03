@@ -11,7 +11,7 @@
 .App {
     text-align: center;
     display: grid;
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: 20% 1fr;
     overflow-x: hidden;
 }
@@ -27,10 +27,6 @@
     padding: 20px;
     color: white;
     grid-column: 1/4;
-}
-
-.Gallery-component {
-    grid-column: 2;
 }
 
 .App-title {
@@ -61,9 +57,6 @@
         grid-row: 1;
     }
 
-    .Gallery-component {
-        grid-row: 2;
-    }
 }
 
 @media screen and (max-width: 400px) {

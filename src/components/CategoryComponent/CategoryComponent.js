@@ -94,7 +94,7 @@ class CategoryComponent extends Component {
                         </label>
                     </div>
 
-                <div>
+                <div className="category-button">
                     <button type="submit">Make your choice</button>
                 </div>
                 </form>

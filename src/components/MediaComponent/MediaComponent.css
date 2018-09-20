@@ -1,0 +1,40 @@
+
+.MediaComponent {
+    /* Place MediaComponent inside GalleryComponent*/
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: stretch;
+
+    /* Grid for components inside MediaComponents*/
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 80% 20%;
+
+    background-color: rosybrown;
+}
+
+@media screen and (max-width: 400px) {
+    .MediaComponent {
+        /* Place MediaComponent inside GalleryComponent*/
+        grid-column: 1;
+        grid-row: 3;
+    
+        /* Grid for components inside MediaComponents*/
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 90% 10%;
+    }
+}
+
+@media screen and (max-width: 800px, min-width: 450px) {
+    .MediaComponent {
+        /* Place MediaComponent inside GalleryComponent*/
+        grid-column: 1;
+        grid-row: 3;
+    
+        /* Grid for components inside MediaComponents*/
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 90% 10%;
+    }
+}

@@ -56,7 +56,7 @@ class TextComponent extends Component {
             );
         } else {
             return (
-                <div> {
+                <div className="Text-component"> {
                     this.state.text.split('\n').map((item, i) =>  <p key={i}> {item} </p>)
                 }
                     <p className="text-author"> -{this.state.author} </p>

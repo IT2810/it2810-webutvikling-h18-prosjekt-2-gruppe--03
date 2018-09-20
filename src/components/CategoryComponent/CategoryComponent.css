@@ -2,7 +2,9 @@
     text-align: left;
     width: fit-content;
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
+    background-color: rgb(141, 141, 141);
+    padding: 1em;
 }
 
 form div {
@@ -13,6 +15,10 @@ form div {
 
 form label {
     margin-left: 1em;
+}
+
+.category-button {
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 400px) {
