@@ -13,6 +13,10 @@
     color: grey;
 }
 
+.Tab-button.active, .Tab-button:active {
+    background-color: rgb(74, 130, 178);
+}
+
 @media screen and (max-width: 800px) {
     .tab-button {
         margin: 0.5em;

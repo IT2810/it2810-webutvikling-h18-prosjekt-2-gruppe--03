@@ -8,19 +8,19 @@ class TabSubComponent extends Component {
 
     constructor(props) {
         super(props);
-
         this.handleClick = this.handleClick.bind(this);
     }
 
     // Tells tab component when this tab is clicked
     handleClick() {
-        this.props.changeTab(this.props.thisTab)
+        this.props.changeTab(this.props.thisTab);
     }
 
     // Renders a tab
     render() {
         return (
-            <button className="tab-button" onClick={this.handleClick} name="btnTab1" type="button" >Tab {this.props.thisTab}</button>
+            <button className={"Tab-button" + ((this.props.activeTab === this.props.thisTab) ? " active" : "")}
+                    onClick={this.handleClick} type="button">Tab {this.props.thisTab}</button>
         );
     }
 }
