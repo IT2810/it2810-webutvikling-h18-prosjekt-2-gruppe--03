@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import "./CategoryComponent.css"
 
+// This is a child of GalleryComponent
 class CategoryComponent extends Component {
-  //This is a child of gallery component
     constructor(props) {
         super(props);
 
@@ -15,29 +15,29 @@ class CategoryComponent extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    //Updates state when picture category change
+    // Updates state when picture category changes
     handlePictureChange(event) {
         this.setState({picture: event.target.parentElement.textContent});
     }
 
-    //Updates state when text category change
+    // Updates state when text category changes
     handleTextChange(event) {
         this.setState({text: event.target.parentElement.textContent});
     }
 
-    //Updates state when sound category change
+    // Updates state when sound category changes
     handleSoundChange(event) {
         this.setState({sound: event.target.parentElement.textContent});
     }
 
-    //Sends state values to gallery component when button is clicked
+    // Sends state values to GalleryComponent when button is clicked
     handleSubmit(event) {
         event.preventDefault();
 
         this.props.getCategories([this.state.picture.toLowerCase(), this.state.text.toLowerCase(), this.state.sound.toLowerCase()]);
     }
 
-    //Renders 12 radio buttons - 3 for each media type - and a submit button
+    // Renders 12 radio buttons - 3 for each media type - and a submit button
     render() {
         return (
             <div className="CategoryComponent">

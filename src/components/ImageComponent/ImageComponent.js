@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import './ImageComponent.css';
 
+// This is a child of MediaComponent
 class ImageComponent extends Component {
-    //This is the child of media component
     constructor() {
         super();
         this.state = {svg: ""}
@@ -15,11 +15,11 @@ class ImageComponent extends Component {
           console.log("did not update yey");
           return;
       }
-      // Generates url from chosen category and file number
       let urlBase = "/media/img/";
       let cat = this.props.category;
       let fileNr = this.props.fileNumber;
       let completeUrl = urlBase + cat + "/img" + fileNr + ".svg";
+        // Generates URL from the chosen category and file number
 
       // Fetches the file from server, converts it to text and saves it in state
       fetch(completeUrl)
@@ -27,7 +27,7 @@ class ImageComponent extends Component {
             .then(data => this.setState({svg: data}));
     };
 
-    // Renders a svg image if a category is chosen, and is empty elsewise
+    // Renders an SVG image if a category is chosen, nothing otherwise
     render() {
         if(this.props.category===""){
             return null;

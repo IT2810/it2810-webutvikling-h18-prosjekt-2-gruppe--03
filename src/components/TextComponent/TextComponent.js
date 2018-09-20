@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
 import "./TextComponent.css"
 
+// This is a child component of media component
 class TextComponent extends Component {
-  //This is a child component of media component
-
     fileNumber;
 
     constructor(props) {

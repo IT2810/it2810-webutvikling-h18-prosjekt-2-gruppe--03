@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './SoundComponent.css';
 
+// This is a child of MediaComponent
 class SoundComponent extends Component {
-  //This is a child of media component
     category;
     fileNumber;
 

@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import './TabSubComponent.css';
 
+// This is a child of tab component
 class TabSubComponent extends Component {
-  //This is a child of tab component
-
     thisTab;
 
     constructor(props) {
