@@ -1,4 +1,3 @@
-
 .tab-button {
     margin: 1em;
     height: 3em;
@@ -24,12 +23,11 @@
         border: none;
         color: lightgrey;
     }
-    
+
     .tab-button:hover {
         background-color: lightgrey;
         color: grey;
     }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -42,10 +40,9 @@
         border: none;
         color: lightgrey;
     }
-    
+
     .tab-button:hover {
         background-color: lightgrey;
         color: grey;
     }
-
 }

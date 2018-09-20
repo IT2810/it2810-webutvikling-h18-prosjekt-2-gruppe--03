@@ -1,4 +1,3 @@
-
 .Gallery-component {
     background-color: rgb(175, 175, 175);
     display: grid;
@@ -15,8 +14,7 @@
     }
 }
 
-
-@media screen and (max-width: 400px)  {
+@media screen and (max-width: 400px) {
     .Gallery-component {
         background-color: rgb(175, 175, 175);
         display: grid;

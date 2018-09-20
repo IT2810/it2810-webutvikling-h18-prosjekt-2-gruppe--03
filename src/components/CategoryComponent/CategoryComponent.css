@@ -1,4 +1,3 @@
-
 .CategoryComponent {
     text-align: left;
     width: fit-content;
@@ -9,22 +8,18 @@
 form div {
     display: flex;
     margin: 0;
-    flex-flow: column 
+    flex-flow: column;
 }
 
 form label {
     margin-left: 1em;
 }
 
-
-
-
 @media screen and (max-width: 400px) {
-
     .CategoryComponent {
         grid-column: 1;
         grid-row: 2;
-    }    
+    }
 
     form {
         display: grid;
@@ -36,7 +31,7 @@ form label {
     form div {
         display: flex;
         margin: 0;
-        flex-flow: row; 
+        flex-flow: row;
     }
 
     form label {
@@ -52,15 +47,13 @@ form label {
     form label {
         margin-left: 0;
     }
-    
 }
 
 @media screen and (max-width: 800px) {
-
     .CategoryComponent {
         grid-column: 1;
         grid-row: 2;
-    }    
+    }
 
     form {
         display: grid;
@@ -72,7 +65,7 @@ form label {
     form div {
         display: flex;
         margin: 0;
-        flex-flow: column; 
+        flex-flow: column;
     }
 
     form label {
@@ -88,5 +81,4 @@ form label {
     form label {
         margin-left: 0;
     }
-    
 }
