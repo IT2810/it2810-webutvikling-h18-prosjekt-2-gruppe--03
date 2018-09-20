@@ -43,7 +43,7 @@ class TextComponent extends Component {
         let isNotStartPage = this.state.text;
         if (!isNotStartPage) {
             return (
-                <div>
+                <div className="welcome-text">
                     <p>Welcome to our gallery!<br/>
                     You can choose between categories
                     for each media type in the bar to the left.<br/>

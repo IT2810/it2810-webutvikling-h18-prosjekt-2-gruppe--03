@@ -1,7 +1,7 @@
 
 .Text-component {
     padding: 2em;
-    font-size: 1vw;
+    font-size: 15px;
     grid-column: 2;
     grid-row: 1;
 }
@@ -11,27 +11,12 @@
     font-size: 1em;
 }
 
-@media screen and (max-width: 400px) {
-
-    .Text-component {
-        padding: 2em;
-        font-size: 2vw;
-        grid-column: 2;
-        grid-row: 1;
-    }
-    
-    .text-author {
-        font-style: italic;
-        font-size: 1em;
-    }
-
-}
 
 @media screen and (max-width: 800px) {
     
     Text-component {
         padding: 2em;
-        font-size: 2vw;
+        font-size: 15px;
         grid-column: 2;
         grid-row: 1;
     }
@@ -43,4 +28,18 @@
 
 }
 
+@media screen and (max-width: 400px) {
 
+    .Text-component {
+        padding: 2em;
+        font-size: 15px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .text-author {
+        font-style: italic;
+        font-size: 1em;
+    }
+
+}

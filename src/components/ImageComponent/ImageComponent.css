@@ -7,31 +7,42 @@
 }
 
 svg {
-    padding: 5px;
-    border: darkslategrey solid 1px;
+    margin: 10px;
 }
 
 .Image-component {
-    margin: 5px;
     height: 90%;
-    width: 90%;
 }
 
 
-@media screen and (max-width: 200px) {
-    .Image-component, svg {
-        height: 20em;
-        width: 20em;
-        grid-column: 1;
-        grid-row: 1;
-    }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .Image-component, svg {
         height: 100%;
         width: 100%;
         grid-column: 1;
         grid-row: 1;
     }
+
+    svg {
+        margin: 10px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .Image-component, svg {
+        height: 20em;
+        width: 20em;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    svg {
+        margin: 5px;
+    }
+
+    .Image-component {
+        padding-right: 10px;
+    }
+    
 }

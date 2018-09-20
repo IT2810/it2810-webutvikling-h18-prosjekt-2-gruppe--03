@@ -34,6 +34,9 @@ class ImageComponent extends Component {
 
 
     render() {
+        if(this.props.category===""){
+            return null;
+          }
         return <div className="Image-component" dangerouslySetInnerHTML={{__html: this.state.svg}} />
     };
 

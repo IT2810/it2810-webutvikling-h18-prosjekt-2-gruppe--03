@@ -1,7 +1,7 @@
 .tab-button {
     margin: 1em;
-    height: 3em;
-    width: 6em;
+    height: 4em;
+    width: 9em;
     border-radius: 4px;
     background-color: rgb(59, 87, 124);
     border: none;
@@ -32,9 +32,9 @@
 
 @media screen and (max-width: 400px) {
     .tab-button {
-        margin: 0.5em;
-        height: 4em;
-        width: 9em;
+        margin: 0.2em;
+        height: 3em;
+        width: 5em;
         border-radius: 4px;
         background-color: rgb(59, 87, 124);
         border: none;
