@@ -5,7 +5,7 @@
     width: 100%
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .SoundComponent {
         grid-column: 1;
         grid-row: 3;

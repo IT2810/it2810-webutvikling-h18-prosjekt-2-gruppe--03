@@ -34,6 +34,7 @@
         grid-template-columns: 5% 90% 5%;
         grid-template-rows: 10% 1fr;
     }
+
 }
 
 @media screen and (max-width: 400px) {

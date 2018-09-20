@@ -32,7 +32,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .MediaComponent {
         /* Place MediaComponent inside GalleryComponent*/
         grid-column: 1;

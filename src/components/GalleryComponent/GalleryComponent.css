@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 20%;
     grid-template-rows: 10% 1fr 0.05fr;
     grid-column: 2;
+    grid-gap: 1em;
     justify-items: end;
 }
 
@@ -18,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .Gallery-component {
         background-color: rgb(175, 175, 175);
         display: grid;
