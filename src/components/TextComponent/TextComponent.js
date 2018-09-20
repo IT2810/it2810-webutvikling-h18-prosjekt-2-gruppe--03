@@ -21,7 +21,7 @@ class TextComponent extends Component {
 
         let category = this.props.category;
         let fileNumber = this.props.fileNumber;
-        let completeUrl = "/media/text/" + category + "/text" + fileNumber + ".js";
+        let completeUrl = "/media/text/" + category + "/text" + fileNumber + ".json";
         fetch(completeUrl)
             .then((response) => response.json())
             .then(data => this.setState({
