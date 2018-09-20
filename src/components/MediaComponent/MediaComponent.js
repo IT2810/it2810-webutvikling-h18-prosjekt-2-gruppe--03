@@ -5,6 +5,7 @@ import SoundComponent from "../SoundComponent/SoundComponent";
 import './MediaComponent.css';
 
 class MediaComponent extends Component {
+  // Child of gallery component and parent to image, sound and text component
     constructor(props) {
         super(props);
         this.state = {
@@ -16,6 +17,7 @@ class MediaComponent extends Component {
         };
     }
 
+    // Creates exhibitions by shufling the values in the arrays
     generateNewExhibition() {
         shuffleArray(this.state.currentPictureFileNumbers);
         shuffleArray(this.state.currentTextFileNumbers);
@@ -43,6 +45,7 @@ class MediaComponent extends Component {
     }
 }
 
+// Shuffles the values in the array
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));

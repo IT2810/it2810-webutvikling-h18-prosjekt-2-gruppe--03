@@ -2,31 +2,27 @@ import React, {Component} from 'react'
 import "./TextComponent.css"
 
 class TextComponent extends Component {
+  //This is a child component of media component
+
     fileNumber;
 
     constructor(props) {
         super(props);
         this.state = {
-            url: "",
-            author: "",
-            text: "",
-        };
+          author: "",
+          text: "",
+      };
     }
 
-    // Generates a URL from props
-    // Fetches the text from the url
+    // Generates a url from chosen category and file number and fetches the text from the url
     componentDidUpdate(prevProps, prevState) {
-      //console.log("prevProps.category: " + prevProps.category + ", this.props.category: " + this.props.category) ;
-      //console.log("prevProps.fileNumber: " + prevProps.fileNumber + ", this.props.fileNumber: " + this.props.fileNumber);
+      // Will not update again if there are no changes
         if (prevProps.category === this.props.category && prevProps.fileNumber === this.props.fileNumber) {
-            //console.log("did not update yey");
             return;
         }
-        //console.log("DID update");
-        let urlBase = "/media/text/";
-        let cat = this.props.category;
-        let fileNr = this.props.fileNumber;
-        let completeUrl = urlBase + cat + "/text" + fileNr + ".js";
+        let category = this.props.category;
+        let fileNumber = this.props.fileNumber;
+        let completeUrl = "/media/text/" + category + "/text" + fileNumber + ".js";
         fetch(completeUrl)
                 .then((response) => response.json())
                 .then(data => this.setState({

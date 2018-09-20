@@ -5,6 +5,8 @@ import MediaComponent from "../MediaComponent/MediaComponent.js"
 import './GalleryComponent.css';
 
 class GalleryComponent extends Component {
+  //This is a parent component to category, media and tab component
+
     constructor() {
         super();
         this.state = {
@@ -16,6 +18,7 @@ class GalleryComponent extends Component {
         this.getCategories = this.getCategories.bind(this);
     }
 
+    // Gets active tab from tab component when a tab is clicked
     getActiveTab(newActiveTab) {
         this.setState({
             activeTab: newActiveTab,
@@ -23,6 +26,7 @@ class GalleryComponent extends Component {
         });
     }
 
+    // Gets chosen categories from category component when submit button is clicked
     getCategories(newCategories) {
         this.setState({
             imageCategory: newCategories[0],
@@ -32,7 +36,7 @@ class GalleryComponent extends Component {
         });
     }
 
-    // Renders gallery text if it exist, if not, shows the welcome text
+    // Renders the gallery
     render() {
         return (
             <div className="Gallery-component">
