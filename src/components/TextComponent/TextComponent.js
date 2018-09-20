@@ -44,7 +44,14 @@ class TextComponent extends Component {
         if (!isNotStartPage) {
             return (
                 <div>
-                    <p> Hello there </p>
+                    <p>Welcome to our gallery!<br/>
+                    You can choose between categories
+                    for each media type in the bar to the left.<br/>
+                    You can also switch between the tabs above
+                    to display different exhibitions.<br/>
+                    Please enjoy the opportunity
+                    to bask in the beauty
+                    of multimedia art.</p>
                 </div>
             );
         } else {

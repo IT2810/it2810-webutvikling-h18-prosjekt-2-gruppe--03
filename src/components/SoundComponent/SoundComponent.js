@@ -5,6 +5,10 @@ class SoundComponent extends Component {
     fileNumber;
 
     render() {
+      if(this.props.category===""){
+        return null;
+      }
+      console.log("this.props.category: " + this.props.category + ", this.props.fileNumber: " + this.props.fileNumber);
         return (
             <div className="SoundComponent">
                 <audio controls>
