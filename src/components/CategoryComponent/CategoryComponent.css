@@ -1,0 +1,107 @@
+
+.CategoryComponent {
+    text-align: left;
+    width: fit-content;
+}
+
+form {
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+}
+
+form label {
+    margin-left: 1em;
+}
+
+form button {
+    align-self: flex-start;
+}
+
+
+.left-aligned, form {
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    grid-column: 3;
+    grid-row: 3/4;
+}
+
+form {
+    margin: 0.5em;
+}
+
+
+@media screen and (max-width: 200px) {
+    .left-aligned, form {
+        text-align: left;
+        height: 100%;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+    
+    .left-aligned {
+        float: left;
+        margin: 0.5;
+    } 
+
+    li {
+        list-style: none;
+        float: left;
+        padding: 0.1em;
+    }
+    
+    ul {
+        float: left;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70% 20%;
+    }
+    
+    button {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .left-aligned, form {
+        text-align: left;
+        height: 100%;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+    
+    .left-aligned {
+        float: left;
+        margin: 0.5em;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        padding: 0.1em;
+    }
+    
+    ul {
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50% 10%;
+    }
+    
+    button {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}

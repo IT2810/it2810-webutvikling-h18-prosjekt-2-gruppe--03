@@ -1,9 +1,9 @@
-import React, {
-    Component
-} from 'react'
+import React, {Component} from 'react'
 import "./TextComponent.css"
 
-class TextComponent extends React.Component {
+class TextComponent extends Component {
+    fileNumber;
+
     constructor(props) {
         super(props);
         this.state = {
@@ -16,25 +16,25 @@ class TextComponent extends React.Component {
     // Generates a URL from props
     // Fetches the text from the url
     componentDidUpdate(prevProps, prevState) {
-      if(prevProps.category == this.props.category || prevProps.textNr == this.props.textNr){
-        console.log("did not update");
-        return;
-      }
-      let urlBase = "/media/text/";
-      let completeUrl = urlBase + "/" + this.props.category + "/" + this.props.textNr + ".js";
-      this.setState({
-          url: completeUrl,
-      },
-        fetch(this.state.url)
-            .then((response) => response.json())
-            .then(data => this.setState({
-                author: data.author,
-                text: data.text
-            }))
-            .catch(function (error) {
-                console.log(error);
-            })
-          );
+        if (prevProps.category === this.props.category || prevProps.fileNumber === this.props.fileNumber) {
+            console.log("did not update");
+            return;
+        }
+        let urlBase = "/media/text/";
+        let completeUrl = urlBase + "/" + this.props.category + "/" + this.props.fileNumber + ".js";
+        this.setState({
+                url: completeUrl,
+            },
+            fetch(this.state.url)
+                .then((response) => response.json())
+                .then(data => this.setState({
+                    author: data.author,
+                    text: data.text
+                }))
+                .catch(function (error) {
+                    console.log(error);
+                })
+        );
     }
 
     // Renders gallery text if it exist, if not, shows the welcome text

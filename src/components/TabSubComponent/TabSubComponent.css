@@ -1,0 +1,15 @@
+
+.tab-button {
+    margin: 1em;
+    height: 3em;
+    width: 6em;
+    border-radius: 6px;
+    background-color: rgb(59, 87, 124);
+    border: none;
+    color: lightgrey;
+}
+
+.tab-button:hover {
+    background-color: lightgrey;
+    color: grey;
+}
