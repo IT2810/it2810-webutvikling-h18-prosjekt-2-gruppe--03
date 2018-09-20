@@ -31,18 +31,21 @@ class MediaComponent extends Component {
     }
 
     componentWillUpdate(nextProps, nextState) {
+        if (!nextProps.shouldGenerateNewExhibition)
+            return;
+
         this.generateNewExhibition();
     }
 
     render() {
         return (
             <div className="MediaComponent">
-                <ImageComponent category={this.props.imageCategory}
-                                fileNumber={this.state.currentPictureFileNumbers[this.props.activeTab]} />
+                <ImageComponent category={this.props.imageCategory} // Active tab numbers are in the range [1, 4]
+                                fileNumber={this.state.currentPictureFileNumbers[this.props.activeTab - 1]} />
                 <TextComponent category={this.props.textCategory}
-                               fileNumber={this.state.currentTextFileNumbers[this.props.activeTab]} />
+                               fileNumber={this.state.currentTextFileNumbers[this.props.activeTab - 1]} />
                 <SoundComponent category={this.props.soundCategory}
-                                fileNumber={this.state.currentSoundFileNumbers[this.props.activeTab]} />
+                                fileNumber={this.state.currentSoundFileNumbers[this.props.activeTab - 1]} />
             </div>
         );
     }

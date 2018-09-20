@@ -4,6 +4,18 @@ class SoundComponent extends Component {
     category;
     fileNumber;
 
+    componentDidUpdate() {
+        this.refs.audio.pause();
+        this.refs.audio.load();
+        let playPromise = this.refs.audio.play();
+
+        // Ensures that the above code is not run before the audio is finished preparing to play
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {})
+                .catch(error => {});
+        }
+    }
+
     render() {
       if(this.props.category===""){
         return null;
@@ -11,14 +23,10 @@ class SoundComponent extends Component {
       console.log("this.props.category: " + this.props.category + ", this.props.fileNumber: " + this.props.fileNumber);
         return (
             <div className="SoundComponent">
-                <audio controls>
+                <audio controls ref="audio">
                     <source src={`/media/sound/${this.props.category}/${getFileName(this.props.category, this.props.fileNumber)}`} type="audio/mpeg" />
                     Your browser does not support HTML5 audio.
                 </audio>
-                <p>
-                    <b>{this.props.category}{this.props.fileNumber}:</b>
-                    {getFileName(this.props.category, this.props.fileNumber)}
-                </p>
             </div>
         );
     }
