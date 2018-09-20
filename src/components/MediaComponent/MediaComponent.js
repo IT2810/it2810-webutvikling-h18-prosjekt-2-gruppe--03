@@ -31,6 +31,9 @@ class MediaComponent extends Component {
     }
 
     componentWillUpdate(nextProps, nextState) {
+        if (!nextProps.shouldGenerateNewExhibition)
+            return;
+
         this.generateNewExhibition();
     }
 
