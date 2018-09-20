@@ -1,7 +1,8 @@
 {
-  "title": "",
-  "author": "Kobayashi Issa",
-  "text": "Arise from sleep, old cat\nand with great yawns and stretchings\namble out for love",
+  "title": "Lost City Cat",
+  "author": "Hy Sobiloff",
+  "text": "Lost city cat\nPaws brush\nAwakens unwritten music\nUnravels an alley's tone\nEncounters a strange foe\nCountry forest.",
   "collection": "",
-  "source": "https://letterpile.com/poetry/haiku-poems-about-cats"
+  "published":"Poetry (September 1968)",
+  "source": "https://www.poetryfoundation.org/poetrymagazine/browse?contentId=31016"
 }

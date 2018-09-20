@@ -64,8 +64,8 @@ class CategoryComponent extends Component {
                         </label>
                         <label>
                             <input type="radio" onChange={this.handleTextChange}
-                                   checked={this.state.text === "Chocolate"} />
-                            Chocolate
+                                   checked={this.state.text === "Cars"} />
+                            Cars
                         </label>
                         <label>
                             <input type="radio" onChange={this.handleTextChange}
