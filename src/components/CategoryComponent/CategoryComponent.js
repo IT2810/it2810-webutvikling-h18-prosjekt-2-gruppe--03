@@ -5,9 +5,12 @@ import "./CategoryComponent.css"
 class CategoryComponent extends Component {
     constructor(props) {
         super(props);
-
-        //The state values are the chosen categories for each media type
-        this.state = {picture: "Birds", text: "Cats", sound: "Animals"};
+        // The state values are the chosen categories for each media type
+        this.state = {
+            picture: "Birds",
+            text: "Cats",
+            sound: "Animals",
+        };
 
         this.handlePictureChange = this.handlePictureChange.bind(this);
         this.handleTextChange = this.handleTextChange.bind(this);
@@ -102,9 +105,9 @@ class CategoryComponent extends Component {
                         </label>
                     </div>
 
-                <div className="category-button">
-                    <button type="submit">Make your choice</button>
-                </div>
+                    <div className="category-button">
+                        <button type="submit">Make your choice</button>
+                    </div>
                 </form>
             </div>
         );

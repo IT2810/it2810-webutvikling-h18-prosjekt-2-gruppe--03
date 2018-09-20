@@ -21,7 +21,7 @@ class TabComponent extends Component {
     // Renders 4 tabs
     render() {
         return (
-            <div className="Tab-component">
+            <div className="TabComponent">
                 <TabSubComponent activeTab={this.state.activeTab} thisTab={1} changeTab={this.changeTab} />
                 <TabSubComponent activeTab={this.state.activeTab} thisTab={2} changeTab={this.changeTab} />
                 <TabSubComponent activeTab={this.state.activeTab} thisTab={3} changeTab={this.changeTab} />

@@ -6,12 +6,12 @@ import './GalleryComponent.css';
 
 // This is the parent of Category-, Media- and TabComponent
 class GalleryComponent extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             activeTab: 1,
             imageCategory: "", textCategory: "", soundCategory: "",
-            shouldGenerateNewExhibition: false
+            shouldGenerateNewExhibition: false,
         };
         this.getActiveTab = this.getActiveTab.bind(this);
         this.getCategories = this.getCategories.bind(this);
@@ -38,7 +38,7 @@ class GalleryComponent extends Component {
     // Renders the gallery
     render() {
         return (
-            <div className="Gallery-component">
+            <div className="GalleryComponent">
                 <TabComponent getActiveTab={this.getActiveTab} />
                 <CategoryComponent getCategories={this.getCategories} />
                 <MediaComponent activeTab={this.state.activeTab}

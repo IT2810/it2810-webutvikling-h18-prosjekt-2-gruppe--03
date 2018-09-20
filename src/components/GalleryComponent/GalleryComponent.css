@@ -1,4 +1,4 @@
-.Gallery-component {
+.GalleryComponent {
     background-color: rgb(175, 175, 175);
     display: grid;
     grid-template-columns: 1fr 20%;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .Gallery-component {
+    .GalleryComponent {
         grid-template-columns: 100%;
         grid-template-rows: 10% 35% 1fr 10%;
         justify-items: center;

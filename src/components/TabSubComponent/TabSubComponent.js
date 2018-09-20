@@ -10,7 +10,7 @@ class TabSubComponent extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    // Tells tab component when this tab is clicked
+    // Tells TabComponent when this tab is clicked
     handleClick() {
         this.props.changeTab(this.props.thisTab);
     }

@@ -1,4 +1,4 @@
-.Image-component, svg {
+.ImageComponent, svg {
     height: 100%;
     width: 100%;
     grid-column: 1;
@@ -10,12 +10,12 @@ svg {
     margin: 10px;
 }
 
-.Image-component {
+.ImageComponent {
     height: 90%;
 }
 
 @media screen and (max-width: 800px) {
-    .Image-component, svg {
+    .ImageComponent, svg {
         height: 100%;
         width: 100%;
         grid-column: 1;
@@ -27,9 +27,8 @@ svg {
     }
 }
 
-
 @media screen and (max-width: 450px) {
-    .Image-component, svg {
+    .ImageComponent, svg {
         height: 100%;
         width: 90%;
         grid-column: 1;
@@ -40,8 +39,7 @@ svg {
         margin: 5px;
     }
 
-    .Image-component {
+    .ImageComponent {
         padding-right: 10px;
     }
-    
 }

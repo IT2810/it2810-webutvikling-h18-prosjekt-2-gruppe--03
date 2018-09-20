@@ -13,7 +13,7 @@ class MediaComponent extends Component {
             // chosen by the active tab number (minus 1, since they're in the range [1, 4])
             currentPictureFileNumbers: [1, 2, 3, 4],
             currentTextFileNumbers: [1, 2, 3, 4],
-            currentSoundFileNumbers: [1, 2, 3, 4]
+            currentSoundFileNumbers: [1, 2, 3, 4],
         };
     }
 
