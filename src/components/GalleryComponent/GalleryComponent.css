@@ -13,9 +13,9 @@
         background-color: rgb(175, 175, 175);
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 20% 1fr 10%;
+        grid-template-rows: 10% 35% 1fr 10%;
         justify-items: center;
-        grid-gap: 1em;
+        grid-gap: 1.5em;
     }
 }
 
@@ -24,6 +24,6 @@
         background-color: rgb(175, 175, 175);
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 20% 1fr 10%;
+        grid-template-rows: 10% 35% 1fr 10%;
     }
 }
