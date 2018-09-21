@@ -1,0 +1,36 @@
+.Image-component, svg {
+    height: 20em;
+    width: 20em;
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.Image-component {
+    margin: 0.5em;
+}
+
+@media screen and (max-width: 200px) {
+    .Image-component, svg {
+        height: 20em;
+        width: 20em;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .Image-component {
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Image-component, svg {
+        height: 20em;
+        width: 20em;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .Image-component {
+        margin: 0.5em;
+    }
+}

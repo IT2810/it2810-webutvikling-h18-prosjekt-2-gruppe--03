@@ -8,44 +8,46 @@ class MediaComponent extends Component {
         super(props);
         this.state = {
             // The arrays below contain the media file numbers, which are sent to the respective media components,
-            // chosen by the current tab index (e.g. 0)
-            currentPictureFileNumbers: [1, 1, 1, 1],
-            currentTextFileNumbers: [1, 1, 1, 1],
-            currentSoundFileNumbers: [1, 1, 1, 1]
+            // chosen by the active tab number (minus 1, since they're in the range [1, 4])
+            currentPictureFileNumbers: [1, 2, 3, 4],
+            currentTextFileNumbers: [1, 2, 3, 4],
+            currentSoundFileNumbers: [1, 2, 3, 4]
         };
     }
 
     generateNewExhibition() {
-        MediaComponent.fillArrayWithRandomNumbers(this.state.currentPictureFileNumbers);
-        MediaComponent.fillArrayWithRandomNumbers(this.state.currentTextFileNumbers);
-        MediaComponent.fillArrayWithRandomNumbers(this.state.currentSoundFileNumbers);
-
-        // TODO: send file number to Picture, Text and Sound
-    }
-
-    static fillArrayWithRandomNumbers(array) {
-        const numberOfFilesPerCategory = 4;
-
-        for (let i = 0; i < array.length; i++)
-            array[i] = 1 + Math.floor(Math.random() * numberOfFilesPerCategory);
+        shuffleArray(this.state.currentPictureFileNumbers);
+        shuffleArray(this.state.currentTextFileNumbers);
+        shuffleArray(this.state.currentSoundFileNumbers);
     }
 
     componentWillUpdate(nextProps, nextState) {
+        if (!nextProps.shouldGenerateNewExhibition)
+            return;
+
         this.generateNewExhibition();
     }
 
     render() {
         return (
             <div className="MediaComponent">
-                <ImageComponent category={this.props.imageCategory}
-                                fileNumber={this.state.currentPictureFileNumbers[this.props.activeTab]} />
+                <ImageComponent category={this.props.imageCategory} // Active tab numbers are in the range [1, 4]
+                                fileNumber={this.state.currentPictureFileNumbers[this.props.activeTab - 1]} />
                 <TextComponent category={this.props.textCategory}
-                               fileNumber={this.state.currentTextFileNumbers[this.props.activeTab]} />
+                               fileNumber={this.state.currentTextFileNumbers[this.props.activeTab - 1]} />
                 <SoundComponent category={this.props.soundCategory}
-                                fileNumber={this.state.currentSoundFileNumbers[this.props.activeTab]} />
+                                fileNumber={this.state.currentSoundFileNumbers[this.props.activeTab - 1]} />
             </div>
         );
     }
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 export default MediaComponent;

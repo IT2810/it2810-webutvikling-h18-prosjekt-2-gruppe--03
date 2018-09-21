@@ -1,18 +1,84 @@
 .CategoryComponent {
     text-align: left;
     width: fit-content;
+    grid-column: 2;
+    grid-row: 1;
 }
 
-form {
+form div {
     display: flex;
-    margin: 1em;
-    flex-direction: column;
+    margin: 0;
+    flex-flow: column;
 }
 
 form label {
     margin-left: 1em;
 }
 
-form button {
-    align-self: flex-start;
+@media screen and (max-width: 400px) {
+    .CategoryComponent {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        grid-gap: 0.5em;
+    }
+
+    form div {
+        display: flex;
+        margin: 0;
+        flex-flow: row;
+    }
+
+    form label {
+        margin-left: 0;
+        font-size: 0.8em;
+        float: left;
+    }
+
+    form div p {
+        margin: 0;
+    }
+
+    form label {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .CategoryComponent {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        grid-gap: 0.5em;
+    }
+
+    form div {
+        display: flex;
+        margin: 0;
+        flex-flow: column;
+    }
+
+    form label {
+        margin-left: 0;
+        font-size: 0.8em;
+        float: left;
+    }
+
+    form div p {
+        margin: 0;
+    }
+
+    form label {
+        margin-left: 0;
+    }
 }
