@@ -2,7 +2,9 @@ import React, {Component} from 'react'
 import ImageComponent from "../ImageComponent/ImageComponent";
 import TextComponent from "../TextComponent/TextComponent";
 import SoundComponent from "../SoundComponent/SoundComponent";
+import './MediaComponent.css';
 
+// Child of GalleryComponent and parent of Image-, Sound- and TextComponent
 class MediaComponent extends Component {
     constructor(props) {
         super(props);
@@ -11,10 +13,11 @@ class MediaComponent extends Component {
             // chosen by the active tab number (minus 1, since they're in the range [1, 4])
             currentPictureFileNumbers: [1, 2, 3, 4],
             currentTextFileNumbers: [1, 2, 3, 4],
-            currentSoundFileNumbers: [1, 2, 3, 4]
+            currentSoundFileNumbers: [1, 2, 3, 4],
         };
     }
 
+    // Creates exhibitions by shuffling the values in the arrays
     generateNewExhibition() {
         shuffleArray(this.state.currentPictureFileNumbers);
         shuffleArray(this.state.currentTextFileNumbers);
@@ -42,6 +45,7 @@ class MediaComponent extends Component {
     }
 }
 
+// Shuffles the values in the array
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));

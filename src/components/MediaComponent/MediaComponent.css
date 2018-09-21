@@ -1,0 +1,34 @@
+.MediaComponent {
+    /* Place MediaComponent inside GalleryComponent */
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: stretch;
+
+    /* Grid for components inside MediaComponent */
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 80% 20%;
+
+    background-color: rosybrown;
+}
+
+.MediaComponent .welcome-text {
+    padding: 2em;
+    font-size: 15px;
+    grid-column: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .MediaComponent {
+        grid-row: 3;
+
+        grid-template-rows: 70% 10% 20%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .MediaComponent {
+        grid-template-columns: 100%;
+        grid-template-rows: 90% 10%;
+    }
+}

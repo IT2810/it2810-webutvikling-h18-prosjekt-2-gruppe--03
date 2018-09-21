@@ -1,21 +1,12 @@
-.Tab-component {
+.TabComponent {
     grid-column: 1;
     grid-row: 1;
     padding: 1em;
+    justify-self: center;
 }
 
-@media screen and (max-width: 200px) {
-    .Tab-component {
-        grid-column: 1;
-        grid-row: 1;
-        padding: 0.5em;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .Tab-component {
-        grid-column: 1;
-        grid-row: 1;
+@media screen and (max-width: 800px) {
+    .TabComponent {
         padding: 0.5em;
     }
 }

@@ -1,7 +1,8 @@
 {
-  "title": "Moonshadow",
-  "author": "Cat Stevens",
-  "text": "I'm bein' followed by a moonshadow, moonshadow, moonshadow\nLeapin' and hoppin' on a moonshadow, moonshadow, moonshadow\nMoonshadow, moonshadow, moonshadow, moonshadow",
-  "collection": "Teaser and the Firecat",
-  "source": "https://www.azlyrics.com/lyrics/catstevens/moonshadow.html"
+  "title": "Full Moon",
+  "author": "Alice Oswald",
+  "text": "Good God! \nWhat did I dream last night? \nI dreamt I was the moon. \nI woke and found myself still asleep. ",
+  "collection": "",
+  "published":"Poetry (February 2007)",
+  "source": "https://www.poetryfoundation.org/poetrymagazine/poems/49193/full-moon-56d22b0c02d2e"
 }

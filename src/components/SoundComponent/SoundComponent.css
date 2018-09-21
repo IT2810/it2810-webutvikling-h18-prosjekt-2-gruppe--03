@@ -1,0 +1,18 @@
+.SoundComponent {
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.attribution {
+    margin-top: -0.1em;
+    font-size: small;
+    font-style: italic;
+}
+
+@media screen and (max-width: 450px) {
+    .SoundComponent {
+        grid-row: 3;
+    }
+}

@@ -4,18 +4,20 @@ import TabComponent from "../TabComponent/TabComponent.js"
 import MediaComponent from "../MediaComponent/MediaComponent.js"
 import './GalleryComponent.css';
 
+// This is the parent of Category-, Media- and TabComponent
 class GalleryComponent extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             activeTab: 1,
             imageCategory: "", textCategory: "", soundCategory: "",
-            shouldGenerateNewExhibition: false
+            shouldGenerateNewExhibition: false,
         };
         this.getActiveTab = this.getActiveTab.bind(this);
         this.getCategories = this.getCategories.bind(this);
     }
 
+    // Gets active tab from TabComponent when a tab is clicked
     getActiveTab(newActiveTab) {
         this.setState({
             activeTab: newActiveTab,
@@ -23,6 +25,7 @@ class GalleryComponent extends Component {
         });
     }
 
+    // Gets chosen categories from CategoryComponent when the submit button is clicked
     getCategories(newCategories) {
         this.setState({
             imageCategory: newCategories[0],
@@ -32,10 +35,10 @@ class GalleryComponent extends Component {
         });
     }
 
-    // Renders gallery text if it exist, if not, shows the welcome text
+    // Renders the gallery
     render() {
         return (
-            <div className="Gallery-component">
+            <div className="GalleryComponent">
                 <TabComponent getActiveTab={this.getActiveTab} />
                 <CategoryComponent getCategories={this.getCategories} />
                 <MediaComponent activeTab={this.state.activeTab}
