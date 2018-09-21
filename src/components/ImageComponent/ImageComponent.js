@@ -14,7 +14,7 @@ class ImageComponent extends Component {
             return;
 
         // Generates URL from the chosen category and file number
-        let urlBase = "/media/img/";
+        let urlBase = "media/img/";
         let cat = this.props.category;
         let fileNr = this.props.fileNumber;
         let completeUrl = urlBase + cat + "/img" + fileNr + ".svg";

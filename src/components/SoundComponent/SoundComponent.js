@@ -13,7 +13,7 @@ class SoundComponent extends Component {
         return (
             <div className="SoundComponent">
                 <audio controls autoPlay
-                       src={`/media/sound/${this.props.category}/${getFileName(this.props.category, this.props.fileNumber)}`}
+                       src={`media/sound/${this.props.category}/${getFileName(this.props.category, this.props.fileNumber)}`}
                        onError={handleAudioError}>
                     Your browser does not support HTML5 audio.
                 </audio>
