@@ -1,7 +1,0 @@
-{
-    "title": "Cat",
-    "author": "Marilyn Singer",
-    "text": "I prefer warm fur,\na perfect fire to lie beside,\na cozy lap where I can nap,\nan empty chair when she's not there.\nI want heat on my feet\non my nose non my hide.\nNo cat I remember dislikes December\ninside.",
-    "collection": "Turtle in July",
-    "source": "https://www.poetryfoundation.org/poems/147301/cat-5b3ba51bf2687"
-}

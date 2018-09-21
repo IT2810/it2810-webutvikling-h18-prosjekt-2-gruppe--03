@@ -10,12 +10,11 @@ class ImageComponent extends Component {
 
     componentDidUpdate(prevProps, prevState) {
         // Will not update again without change
-        if (prevProps.category === this.props.category && prevProps.fileNumber === this.props.fileNumber) {
-            console.log("did not update yey");
+        if (prevProps.category === this.props.category && prevProps.fileNumber === this.props.fileNumber)
             return;
-        }
+
         // Generates URL from the chosen category and file number
-        let urlBase = "/media/img/";
+        let urlBase = "media/img/";
         let cat = this.props.category;
         let fileNr = this.props.fileNumber;
         let completeUrl = urlBase + cat + "/img" + fileNr + ".svg";

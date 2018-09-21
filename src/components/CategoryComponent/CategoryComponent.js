@@ -7,20 +7,20 @@ class CategoryComponent extends Component {
         super(props);
         // The state values are the chosen categories for each media type
         this.state = {
-            picture: "Birds",
+            image: "Birds",
             text: "Cats",
             sound: "Animals",
         };
 
-        this.handlePictureChange = this.handlePictureChange.bind(this);
+        this.handleImageChange = this.handleImageChange.bind(this);
         this.handleTextChange = this.handleTextChange.bind(this);
         this.handleSoundChange = this.handleSoundChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    // Updates state when picture category changes
-    handlePictureChange(event) {
-        this.setState({picture: event.target.parentElement.textContent});
+    // Updates state when image category changes
+    handleImageChange(event) {
+        this.setState({image: event.target.parentElement.textContent});
     }
 
     // Updates state when text category changes
@@ -37,7 +37,7 @@ class CategoryComponent extends Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        this.props.getCategories([this.state.picture.toLowerCase(), this.state.text.toLowerCase(), this.state.sound.toLowerCase()]);
+        this.props.getCategories([this.state.image.toLowerCase(), this.state.text.toLowerCase(), this.state.sound.toLowerCase()]);
     }
 
     // Renders 12 radio buttons - 3 for each media type - and a submit button
@@ -46,21 +46,21 @@ class CategoryComponent extends Component {
             <div className="CategoryComponent">
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <p>Pictures</p>
+                        <p>Images</p>
 
                         <label>
-                            <input type="radio" onChange={this.handlePictureChange}
-                                   checked={this.state.picture === "Birds"} />
+                            <input type="radio" onChange={this.handleImageChange}
+                                   checked={this.state.image === "Birds"} />
                             Birds
                         </label>
                         <label>
-                            <input type="radio" onChange={this.handlePictureChange}
-                                   checked={this.state.picture === "Flowers"} />
+                            <input type="radio" onChange={this.handleImageChange}
+                                   checked={this.state.image === "Flowers"} />
                             Flowers
                         </label>
                         <label>
-                            <input type="radio" onChange={this.handlePictureChange}
-                                   checked={this.state.picture === "Landscape"} />
+                            <input type="radio" onChange={this.handleImageChange}
+                                   checked={this.state.image === "Landscape"} />
                             Landscape
                         </label>
                     </div>
