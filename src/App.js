@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import HeaderComponent from './components/HeaderComponent';
-import SoundComponent from "./components/SoundComponent";
-import TextComponent from './components/TextComponent';
-import CategoryComponent from './components/CategoryComponent';
-import ImageComponent from './components/ImageComponent';
+// import HeaderComponent from './components/HeaderComponent';
+import SoundComponent from "./components/SoundComponent/SoundComponent.js";
+import TextComponent from './components/TextComponent/TextComponent.js';
+
+import GalleryComponent from './components/GalleryComponent/GalleryComponent.js';
+import ImageComponent from './components/ImageComponent/ImageComponent.js';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,11 +20,8 @@ class App extends Component {
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
-                <HeaderComponent />
-                <ImageComponent /> 
-                <TextComponent category="cats" textNr="text1"/>
-                <SoundComponent />
-                <CategoryComponent />
+
+                <GalleryComponent />
             </div>
         );
     }
