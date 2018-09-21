@@ -1,23 +1,25 @@
 import React, {Component} from 'react';
 import './TabSubComponent.css';
 
+// This is a child of tab component
 class TabSubComponent extends Component {
     thisTab;
 
     constructor(props) {
         super(props);
-
         this.handleClick = this.handleClick.bind(this);
     }
 
+    // Tells TabComponent when this tab is clicked
     handleClick() {
-        this.props.changeTab(this.props.thisTab) // Calls a function in TabComponent
+        this.props.changeTab(this.props.thisTab);
     }
 
-    // Renders gallery text if it exist, if not, shows the welcome text
+    // Renders a tab
     render() {
         return (
-            <button className="tab-button" onClick={this.handleClick} name="btnTab1" type="button" >Tab {this.props.thisTab}</button>
+            <button className={"Tab-button" + ((this.props.activeTab === this.props.thisTab) ? " active" : "")}
+                    onClick={this.handleClick} type="button">Tab {this.props.thisTab}</button>
         );
     }
 }

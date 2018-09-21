@@ -1,49 +1,21 @@
-
-:root {
-    /*
-    --navn-variabel: verdi;
-    bruke: 
-        color: var(--navn-variabel);
-
-    */
-}
-
 .App {
     text-align: center;
     display: grid;
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 20% 60% 20%;
     grid-template-rows: 20% 1fr;
     overflow-x: hidden;
 }
 
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-}
-
 .App-header {
     background-color: #222;
-    height: 10em;
+    height: 7em;
     padding: 20px;
     color: white;
     grid-column: 1/4;
 }
 
-.Gallery-component {
-    grid-column: 2;
-}
-
 .App-title {
     font-size: 2.0em;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -51,18 +23,6 @@
         display: grid;
         grid-template-columns: 5% 90% 5%;
         grid-template-rows: 10% 1fr;
-    }
-
-    .App-header {
-        background-color: #222;
-        height: 10em;
-        padding: 20px;
-        color: white;
-        grid-row: 1;
-    }
-
-    .Gallery-component {
-        grid-row: 2;
     }
 }
 
@@ -74,51 +34,6 @@
     }
 
     .App-header {
-        background-color: #222;
-        height: 10em;
-        padding: 20px;
-        color: white;
-        grid-row: 1;
-    }
-
-}
-
-/*
-.App {
-    text-align: center;
-}
-
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-}
-
-svg {
-    width: 50%;
-    height: 50%;
-}
-
-.App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-}
-
-.App-title {
-    font-size: 1.5em;
-}
-
-.App-intro {
-    font-size: large;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
+        height: 5em;
     }
 }
-*/

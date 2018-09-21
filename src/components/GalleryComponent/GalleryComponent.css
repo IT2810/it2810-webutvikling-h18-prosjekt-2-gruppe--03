@@ -1,24 +1,18 @@
-.Gallery-component {
+.GalleryComponent {
     background-color: rgb(175, 175, 175);
     display: grid;
-    grid-template-columns: 1fr 30%;
-    grid-template-rows: 10% 20% 1fr;
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: 10% 1fr 0.05fr;
+    grid-column: 2;
+    grid-gap: 1em;
+    justify-items: end;
 }
 
 @media screen and (max-width: 800px) {
-    .Gallery-component {
-        background-color: rgb(175, 175, 175);
-        display: grid;
+    .GalleryComponent {
         grid-template-columns: 100%;
-        grid-template-rows: 10% 20% 1fr;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .Gallery-component {
-        background-color: rgb(175, 175, 175);
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 20% 1fr;
+        grid-template-rows: 10% 35% 1fr 10%;
+        justify-items: center;
+        grid-gap: 1.5em;
     }
 }
