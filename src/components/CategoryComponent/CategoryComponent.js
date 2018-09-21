@@ -4,7 +4,7 @@ import "./CategoryComponent.css"
 class CategoryComponent extends Component {
     constructor(props) {
         super(props);
-        this.state = {picture: "", text: "", sound: ""};
+        this.state = {picture: "Birds", text: "Cats", sound: "Animals"};
 
         this.handlePictureChange = this.handlePictureChange.bind(this);
         this.handleTextChange = this.handleTextChange.bind(this);
@@ -28,69 +28,75 @@ class CategoryComponent extends Component {
         event.preventDefault();
 
         this.props.getCategories([this.state.picture.toLowerCase(), this.state.text.toLowerCase(), this.state.sound.toLowerCase()]);
-        alert(`You chose the ${this.state.picture}, ${this.state.text} and ${this.state.sound} options.`);
     }
 
     render() {
         return (
             <div className="CategoryComponent">
                 <form onSubmit={this.handleSubmit}>
-                    <p>Pictures</p>
+                    <div>
+                        <p>Pictures</p>
 
-                    <label>
-                        <input type="radio" onChange={this.handlePictureChange}
-                               checked={this.state.picture === "Birds"} />
-                        Birds
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handlePictureChange}
-                               checked={this.state.picture === "Flowers"} />
-                        Flowers
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handlePictureChange}
-                               checked={this.state.picture === "Landscape"} />
-                        Landscape
-                    </label>
+                        <label>
+                            <input type="radio" onChange={this.handlePictureChange}
+                                   checked={this.state.picture === "Birds"} />
+                            Birds
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handlePictureChange}
+                                   checked={this.state.picture === "Flowers"} />
+                            Flowers
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handlePictureChange}
+                                   checked={this.state.picture === "Landscape"} />
+                            Landscape
+                        </label>
+                    </div>
 
-                    <p>Texts</p>
+                    <div>
+                        <p>Texts</p>
 
-                    <label>
-                        <input type="radio" onChange={this.handleTextChange}
-                               checked={this.state.text === "Cats"} />
-                        Cats
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handleTextChange}
-                               checked={this.state.text === "Chocolate"} />
-                        Chocolate
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handleTextChange}
-                               checked={this.state.text === "Moon"} />
-                        Moon
-                    </label>
+                        <label>
+                            <input type="radio" onChange={this.handleTextChange}
+                                   checked={this.state.text === "Cats"} />
+                            Cats
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handleTextChange}
+                                   checked={this.state.text === "Chocolate"} />
+                            Chocolate
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handleTextChange}
+                                   checked={this.state.text === "Moon"} />
+                            Moon
+                        </label>
+                    </div>
 
-                    <p>Sounds</p>
+                    <div>
+                        <p>Sounds</p>
 
-                    <label>
-                        <input type="radio" onChange={this.handleSoundChange}
-                               checked={this.state.sound === "Animals"} />
-                        Animals
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handleSoundChange}
-                               checked={this.state.sound === "Food"} />
-                        Food
-                    </label>
-                    <label>
-                        <input type="radio" onChange={this.handleSoundChange}
-                               checked={this.state.sound === "Footsteps"} />
-                        Footsteps
-                    </label>
+                        <label>
+                            <input type="radio" onChange={this.handleSoundChange}
+                                   checked={this.state.sound === "Animals"} />
+                            Animals
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handleSoundChange}
+                                   checked={this.state.sound === "Food"} />
+                            Food
+                        </label>
+                        <label>
+                            <input type="radio" onChange={this.handleSoundChange}
+                                   checked={this.state.sound === "Footsteps"} />
+                            Footsteps
+                        </label>
+                    </div>
 
-                    <br />
+                <div>
                     <button type="submit">Make your choice</button>
+                </div>
                 </form>
             </div>
         );
