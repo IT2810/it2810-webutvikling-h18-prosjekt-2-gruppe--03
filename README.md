@@ -5,7 +5,7 @@
   * Kategori-komponent
   * Fane-komponent
   * Media-komponent
-  * Bilde-,tekst- og lyd-komponent
+  * Bilde-, tekst- og lyd-komponent
   * Startside
   * AJAX
 * Responsivt design
@@ -45,7 +45,7 @@ På startsiden er fane 1 aktiv og utstillingen viser bare en velkomsttekst. I ka
 ### Responsivt design
 Vi har tilpasset siden til ulike viewports ved å ta med viewport-metataggen i HTML-filen og brukt media-queries for å endre layout basert på bredden. Viewport-metataggen gjør at nettleseren kan tilpasse sidens dimensjoner og skalering basert på blant annet skjermstørrelsen til enheten.
 
-Løsningen vår tilpasser seg skjermens størrelse og orientering ved at den endrer layouten basert på skjermens bredde. Dette gjorde vi med media-queries hvor vi har brukt max-width som breakpoint for å bestemme når layouten skal endre seg. Breakpointene vi har brukt er ved 800px og 450px. Disse gjør at layouten tilpasser seg generelle mellomstore og små skjermer. Layouten er generelt laget for å fungere på større skjermer enn disse.
+Løsningen vår tilpasser seg skjermens størrelse og orientering ved at den endrer layouten basert på skjermens bredde. Dette gjorde vi med media-queries hvor vi har brukt `max-width` som breakpoint for å bestemme når layouten skal endre seg. Breakpointene vi har brukt er ved 800px og 450px. Disse gjør at layouten tilpasser seg generelle mellomstore og små skjermer. Layouten er generelt laget for å fungere på større skjermer enn disse.
 
 For skjermer over 800px har vi laget en layout som fokuserer på breddeformatet, og er dermed tilpasset plattformer som desktop-PC-er og andre med større skjermer. Her er faner plassert øverst og kategori-valgene på høyresiden, mens bilde, tekst og lyd er plassert midt på siden under fanene for å utnytte bredden. Siden layouten er i breddeformat, ligger tekst og bilde ved siden av hverandre.
 
@@ -54,7 +54,7 @@ For skjermer under 800px gikk vi over til en mer vertikal layout hvor faner og k
 <br />
 
 ### Testing
-Vi testet løsningen vår i breddeformat på to PC-er med skjermoppløsningene 1920x1080 og 1366x768, og i vertikalt format på tre mobiler med skjermoppløsningene 2240x1080, 1920x1080 og 1520x720. Vi har også testet i to forskjellige nettlesere; Google Chrome og Mozilla Firefox på PC, og i Chrome på mobil.
+Vi testet løsningen vår i breddeformat på to PC-er med skjermoppløsningene 1920x1080 og 1366x768, og i vertikalt format på tre mobiler med skjermoppløsningene 2240x1080, 1920x1080 og 1520x720. Vi har også testet i to forskjellige nettlesere: Google Chrome og Mozilla Firefox på PC, og Chrome på mobil.
 
 Hensikten med testene er å se at komponentene var plassert riktig på siden og i forhold til hverandre, og å se at plasseringen og skaleringen av komponentene tilpasset seg skjermstørrelsen til enheten. Vi testet løsningen jevnlig og systematisk mens vi jobbet med responsivt design, og sjekket også at alle komponentene tilpasset seg skjermstørrelsen når man skiftet mellom vertikal og horisontal orientering på mobil.
 
@@ -68,6 +68,6 @@ Vi har brukt to branches i prosjektet vårt: master og dev, som ble brukt til al
 <br />
 
 ### Kilder til media-filer
-Bilder er hentet fra “https://openclipart.org”
-Tekster er hentet fra “https://www.poetryfoundation.org/”
-Lyder er hentet fra “http://soundbible.com”
+ * Bilder er hentet fra https://openclipart.org
+ * Tekster er hentet fra https://www.poetryfoundation.org
+ * Lyder er hentet fra http://soundbible.com
